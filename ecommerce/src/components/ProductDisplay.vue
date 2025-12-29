@@ -107,15 +107,6 @@ export default {
     }
   },
   mounted() {
-    // DEBUG: Test pattern image
-    console.log('=== DEBUG bg-pattern.png ===');
-    try {
-      const patternUrl = require('@/assets/bg-pattern.png');
-      console.log('Pattern URL resolved:', patternUrl);
-    } catch (e) {
-      console.error('Pattern require error:', e);
-    }
-    
     // Memanggil fetchProduct pertama kali saat aplikasi dibuka
     this.fetchProduct();
   },
